@@ -25,8 +25,8 @@ function sortProducts(criteria, array){
         });
     }else if (criteria === ORDER_BY_PROD_COST){
         result = array.sort(function (a, b){
-            let aCost = parseInt(a.cost); //a.productCost
-            let bCost = parseInt(b.cost); //b.productCost
+            let aCost = parseInt(a.cost); 
+            let bCost = parseInt(b.cost); 
 
             if (aCost > bCost){return -1};
             if (aCost < bCost){return 1};
